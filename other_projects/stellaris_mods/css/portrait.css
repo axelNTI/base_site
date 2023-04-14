@@ -1,0 +1,13 @@
+@media (orientation: portrait) {
+  body > main > article {
+    grid-template-rows: 2fr 3fr;
+  }
+
+  body > main > article > figure {
+    border-style: solid none;
+  }
+
+  body > main > article > div > article {
+    border-style: none none solid none;
+  }
+}

@@ -1,0 +1,29 @@
+body {
+  background: url("../images/03_sigma.png");
+  background-size: auto 100vh;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+  font-family: "Orbitron";
+  text-align: center;
+  margin-top: 10%;
+  text-shadow: 4px 4px black;
+  letter-spacing: 6px;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 5%;
+  padding: 10px;
+  border-radius: 10px;
+  filter: brightness(115%);
+  background-color: rgb(255, 134, 8);
+}

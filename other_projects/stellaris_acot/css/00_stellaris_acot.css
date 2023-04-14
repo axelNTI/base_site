@@ -1,0 +1,176 @@
+body {
+  background-image: url("../images/00_acot.png");
+  background-attachment: top;
+  background-repeat: no-repeat;
+  background-color: rgb(12, 24, 38);
+  background-size: auto 100vh;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+  font-family: "Orbitron";
+  text-align: center;
+  margin-top: 10%;
+  text-shadow: 4px 4px black;
+  letter-spacing: 6px;
+}
+
+p {
+  margin: 0px;
+}
+
+.nav a {
+  font-size: x-large;
+  text-decoration: none;
+  color: white;
+  background-color: None;
+  border-color: white;
+  border-width: 2px;
+  text-align: left;
+  border-style: solid none none none;
+  flex: auto;
+  margin: 0.5%;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 65.1%;
+  margin: auto;
+  margin-top: 30%;
+  margin-bottom: 10%;
+}
+
+.nav a p::first-letter {
+  color: rgb(190, 134, 41);
+}
+
+.nav a:hover {
+  border-color: rgb(161, 104, 44);
+}
+
+@media screen and (orientation: portrait) {
+  .nav {
+    margin-top: 85%;
+  }
+  @media only screen and (max-width: 350px) {
+    .nav {
+      margin-top: 70%;
+    }
+  }
+  @media only screen and (max-width: 300px) {
+    .nav {
+      margin-top: 60%;
+    }
+  }
+  @media only screen and (max-width: 250px) {
+    .nav {
+      margin-top: 50%;
+    }
+  }
+}
+@media screen and (orientation: landscape) {
+  @media only screen and (max-width: 1250px) {
+    .nav {
+      margin-top: 30%;
+    }
+  }
+  @media only screen and (max-width: 1100px) {
+    .nav {
+      margin-top: 25%;
+    }
+    h1 {
+      margin-top: 7.5%;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    .nav {
+      margin-top: 24%;
+    }
+    h1 {
+      margin-top: 5%;
+    }
+  }
+  @media only screen and (max-width: 850px) {
+    .nav {
+      margin-top: 25%;
+    }
+    h1 {
+      margin-top: 2.5%;
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    .nav {
+      margin-top: 20%;
+    }
+  }
+}
+
+.shortcut_tree {
+  margin-left: 5%;
+  position: sticky;
+  top: 15vmin;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  float: left;
+}
+
+.shortcut_tree a {
+  font-size: x-large;
+  text-decoration: none;
+  color: black;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 10px;
+  border-style: solid;
+  margin: 5%;
+  padding: 5%;
+}
+
+.info_boxes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 5%;
+  padding: 10px;
+  border-radius: 10px;
+  filter: brightness(115%);
+  background-color: rgb(150, 150, 150);
+}
+
+.delta {
+  background-color: rgb(2, 241, 165);
+}
+
+.alpha {
+  background-color: rgb(1, 154, 245);
+}
+
+.sigma {
+  background-color: rgb(255, 134, 8);
+}
+
+.phi {
+  background-color: rgb(194, 13, 3);
+}
+
+.theta {
+  background-color: rgb(242, 150, 255);
+}
+
+.omega {
+  background-color: rgb(239, 216, 107);
+}

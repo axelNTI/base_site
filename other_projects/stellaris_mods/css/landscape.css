@@ -1,0 +1,13 @@
+@media (orientation: landscape) {
+  body > main > article {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  body > main > article > figure {
+    border-style: solid solid none none;
+  }
+
+  body > main > article > div > article {
+    border-style: solid none;
+  }
+}
