@@ -1,0 +1,26 @@
+@media (orientation: portrait) {
+  main > article[data-status="inactive"] {
+    transform: translateY(-100%);
+    transition: none;
+  }
+
+  main > article[data-status="active"] {
+    transform: translateY(0%);
+  }
+
+  main > article[data-status="before"] {
+    transform: translateY(-100%);
+  }
+
+  main > article[data-status="after"] {
+    transform: translateY(100%);
+  }
+
+  main > article[data-status="becoming-active-from-before"] {
+    transform: translateY(-100%);
+  }
+
+  main > article[data-status="becoming-active-from-after"] {
+    transform: translateY(100%);
+  }
+}

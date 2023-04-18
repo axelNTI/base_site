@@ -1,0 +1,26 @@
+@media (orientation: landscape) {
+  main > article[data-status="inactive"] {
+    transform: translateX(-100%);
+    transition: none;
+  }
+
+  main > article[data-status="active"] {
+    transform: translateX(0%);
+  }
+
+  main > article[data-status="before"] {
+    transform: translateX(-100%);
+  }
+
+  main > article[data-status="after"] {
+    transform: translateX(100%);
+  }
+
+  main > article[data-status="becoming-active-from-before"] {
+    transform: translateX(-100%);
+  }
+
+  main > article[data-status="becoming-active-from-after"] {
+    transform: translateX(100%);
+  }
+}

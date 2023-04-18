@@ -5,8 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/landscape.css" />
+    <link rel="stylesheet" href="css/portrait.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>The Caloctoran Trade & Farm Group</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <article data-index="0" data-status="active">
+        <figure>
+          <img
+            src="../stellaris_mods/images/slideshow/gigastructural_engineering/gigas_01.png"
+            alt=""
+          />
+        </figure>
+      </article>
+      <article data-index="1" data-status="inactive">
+        <figure>
+          <img
+            src="../stellaris_mods/images/slideshow/gigastructural_engineering/gigas_02.png"
+            alt=""
+          />
+        </figure>
+      </article>
+      <article data-index="2" data-status="inactive">
+        <figure>
+          <img
+            src="../stellaris_mods/images/slideshow/gigastructural_engineering/gigas_03.png"
+            alt=""
+          />
+        </figure>
+      </article>
+      <article data-index="3" data-status="inactive">
+        <figure>
+          <img
+            src="../stellaris_mods/images/slideshow/gigastructural_engineering/gigas_04.png"
+            alt=""
+          />
+        </figure>
+      </article>
+    </main>
+    <nav>
+      <button type="button" onClick="handleLeftClick()">
+        <picture>
+          <source
+            srcset="../stellaris_mods/images/singular_images/portrait_prev.png"
+            media="(orientation: portrait)"
+          />
+          <img
+            src="../stellaris_mods/images/singular_images/landscape_prev.png"
+            alt=""
+          />
+        </picture>
+      </button>
+      <button type="button" onClick="handleRightClick()">
+        <picture>
+          <source
+            srcset="../stellaris_mods/images/singular_images/portrait_next.png"
+            media="(orientation: portrait)"
+          />
+          <img
+            src="../stellaris_mods/images/singular_images/landscape_next.png"
+            alt=""
+          />
+        </picture>
+      </button>
+    </nav>
+    <script src="js/carousel.js"></script>
+  </body>
 </html>
