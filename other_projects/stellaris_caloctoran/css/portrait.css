@@ -23,4 +23,18 @@
   main > article[data-status="becoming-active-from-after"] {
     transform: translateY(100%);
   }
+
+  button {
+    transform: rotate(90deg);
+  }
+
+  button:first-of-type {
+    top: 0;
+    left: calc(50vw - 22.5px);
+  }
+
+  button:last-of-type {
+    bottom: 0;
+    left: calc(50vw - 22.5px);
+  }
 }

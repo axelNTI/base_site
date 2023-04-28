@@ -42,5 +42,17 @@ main > article[data-status="becoming-active-from-after"] {
 
 nav {
   position: absolute;
-  bottom: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100vw;
+  height: 100vh;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  position: absolute;
+}
+
+img {
+  background-color: rgba(0, 0, 0, 0);
 }

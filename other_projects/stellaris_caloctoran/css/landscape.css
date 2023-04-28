@@ -23,4 +23,14 @@
   main > article[data-status="becoming-active-from-after"] {
     transform: translateX(100%);
   }
+
+  button:first-of-type {
+    left: 0;
+    top: calc(50vh - 22.5px);
+  }
+
+  button:last-of-type {
+    right: 0;
+    top: calc(50vh - 22.5px);
+  }
 }
