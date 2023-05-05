@@ -29,21 +29,8 @@ main > article > img {
 main > article > h1 {
   position: absolute;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 60px;
   color: rgb(200, 100, 100);
   text-shadow: 4px 4px black;
-}
-
-main > article > h1:first-of-type {
-  top: 20vh;
-  left: 20vw;
-  transform: rotate(-15deg);
-}
-
-main > article > h1:last-of-type {
-  top: 60vh;
-  left: 50vw;
-  transform: rotate(10deg);
 }
 
 main > article[data-status="becoming-active-from-before"] {

@@ -24,6 +24,22 @@
     transform: translateY(100%);
   }
 
+  main > article > h1 {
+    font-size: calc(16px + 50 * ((100vw - 320px) / 680));
+  }
+
+  main > article > h1:first-of-type {
+    top: 10vh;
+    left: 5vw;
+    transform: rotate(-15deg);
+  }
+
+  main > article > h1:last-of-type {
+    top: 75vh;
+    left: 5vw;
+    transform: rotate(10deg);
+  }
+
   button {
     transform: rotate(90deg);
   }
