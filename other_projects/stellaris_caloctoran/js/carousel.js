@@ -4,6 +4,18 @@ let activeIndex = 0;
 
 const slides = document.getElementsByTagName("article");
 
+document.addEventListener("keydown", keyDownTextField, false);
+
+function keyDownTextField(key) {
+  var keyCode = key.keyCode;
+  if (keyCode == 37) {
+    handleLeftClick();
+  }
+  if (keyCode == 39) {
+    handleRightClick();
+  }
+}
+
 const handleLeftClick = () => {
   const nextIndex = activeIndex - 1 >= 0 ? activeIndex - 1 : slides.length - 1;
 
