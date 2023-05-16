@@ -7,41 +7,38 @@
 
 body {
   overflow: hidden;
-}
-
-main > article {
-  display: grid;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  transition: transform 400ms ease-in-out;
-  overflow: hidden;
-}
-
-main > article > img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-main > article > h1 {
-  position: absolute;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: rgb(200, 100, 100);
-  text-shadow: 4px 4px black;
-}
-
-main > article[data-status="becoming-active-from-before"] {
-  transition: none;
-}
-
-main > article[data-status="becoming-active-from-after"] {
-  transition: none;
-}
-
-button {
-  border: 0;
-  position: absolute;
+  & > main {
+    & > article {
+      display: grid;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: transform 400ms ease-in-out;
+      overflow: hidden;
+      & > img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      & > h1 {
+        position: absolute;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: rgb(200, 100, 100);
+        text-shadow: 4px 4px black;
+      }
+    }
+    & > article[data-status="becoming-active-from-before"],
+    & > article[data-status="becoming-active-from-after"],
+    & > article[data-status="inactive"] {
+      transition: none;
+    }
+  }
+  & > nav {
+    & > button {
+      border: 0;
+      position: absolute;
+    }
+  }
 }

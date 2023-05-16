@@ -1,56 +1,46 @@
 @media (orientation: portrait) {
-  main > article[data-status="inactive"] {
-    transform: translateY(-100%);
-    transition: none;
-  }
-
-  main > article[data-status="active"] {
-    transform: translateY(0%);
-  }
-
-  main > article[data-status="before"] {
-    transform: translateY(-100%);
-  }
-
-  main > article[data-status="after"] {
-    transform: translateY(100%);
-  }
-
-  main > article[data-status="becoming-active-from-before"] {
-    transform: translateY(-100%);
-  }
-
-  main > article[data-status="becoming-active-from-after"] {
-    transform: translateY(100%);
-  }
-
-  main > article > h1 {
-    font-size: calc(16px + 50 * ((100vw - 320px) / 680));
-  }
-
-  main > article > h1:first-of-type {
-    top: 10vh;
-    left: 5vw;
-    transform: rotate(-15deg);
-  }
-
-  main > article > h1:last-of-type {
-    top: 75vh;
-    left: 5vw;
-    transform: rotate(10deg);
-  }
-
-  button {
-    transform: rotate(90deg);
-  }
-
-  button:first-of-type {
-    top: 0;
-    left: calc(50vw - 22.5px);
-  }
-
-  button:last-of-type {
-    bottom: 0;
-    left: calc(50vw - 22.5px);
+  body {
+    & > main {
+      & > article {
+        & > h1 {
+          font-size: calc(16px + 50 * ((100vw - 320px) / 680));
+          &:first-of-type {
+            top: 10vh;
+            left: 5vw;
+            transform: rotate(-15deg);
+          }
+          &:last-of-type {
+            top: 75vh;
+            left: 5vw;
+            transform: rotate(10deg);
+          }
+        }
+      }
+      & > article[data-status="active"] {
+        transform: translateY(0%);
+      }
+      & > article[data-status="inactive"],
+      & > article[data-status="before"],
+      & > article[data-status="becoming-active-from-before"] {
+        transform: translateY(-100%);
+      }
+      & > article[data-status="after"],
+      & > article[data-status="becoming-active-from-after"] {
+        transform: translateY(100%);
+      }
+    }
+    & > nav {
+      & > button {
+        transform: rotate(90deg);
+        &:first-of-type {
+          top: 0;
+          left: calc(50vw - 22.5px);
+        }
+        &:last-of-type {
+          bottom: 0;
+          left: calc(50vw - 22.5px);
+        }
+      }
+    }
   }
 }
