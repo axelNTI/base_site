@@ -4,55 +4,38 @@
     <meta charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="stylesheet" href="css/style.css" >
-    <link rel="stylesheet" href="css/landscape.css" >
-    <link rel="stylesheet" href="css/portrait.css" >
+    <link rel="stylesheet" href="css/home.css" >
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" >
     <title>The Caloctoran Trade & Farm Group</title>
   </head>
   <body>
     <main>
-      <article data-index="0" data-status="active">
-        <img
-          src="images/caloc.jpg"
-          alt="Image of the massive Caloctoran Capital"
-        >
-        <h1>The Caloctoran Trade & Farm Group</h1>
-        <h1>Join Today! Together, the galaxy is ours</h1>
-      </article>
-      <article data-index="1" data-status="inactive">
-        <img
-          src="images/fleet.jpg"
-          alt="Image of the mighty Caloctoran Fleet"
-        >
-        <h1>The Mighty Fleet</h1>
-        <h1>Our First Line of Defense against any threat</h1>
-      </article>
-      <article data-index="2" data-status="inactive">
-        <img
-          src="images/region.jpg"
-          alt="Image of the Caloctoran Empire and its neighbours"
-        >
-        <h1>The Empire Stands Ready</h1>
-        <h1>We must look beyond our borders, our neighbors are weak</h1>
-      </article>
-      <article data-index="3" data-status="inactive">
-        <img
-          src="images/galaxy.jpg"
-          alt="Image of the Galaxy and the Caloctoran Empire withing it"
-        >
-        <h1>The Galaxy Will Be Ours</h1>
-        <h1>We are growing stronger each day. We will rule the galaxy</h1>
-      </article>
+      <aside>
+        <button onclick="location.href = '../../';">Return</button>
+        <fieldset>
+          <legend>Contact information</legend>
+          <address>
+            Coded and written by Axel Thornberg<br >
+            Made for an assignment<br >
+            Gmail can be found at
+            <a href="mailto:webb.stellaris.mods@gmail.com"
+              >webb.stellaris.mods@gmail.com</a
+            >
+            <br >
+          </address>
+        </fieldset>
+      </aside>
+      <h1>The Caloctoran Trade & Farm Group</h1>
+      <h3>Scroll down to view posters</h3>
+      <button onclick="location.href = '#redirect';">
+        <img src="images/next.png" alt="Arrow pointing down" >
+      </button>
     </main>
-    <nav>
-      <button type="button" onClick="handleLeftClick()">
-        <img src="images/prev.png" alt="Button for previous slide" >
-      </button>
-      <button type="button" onClick="handleRightClick()">
-        <img src="images/next.png" alt="Button for next slide" >
-      </button>
-    </nav>
-    <script src="js/carousel.js"></script>
+    <img
+      src="images/caloc.jpg"
+      alt="Image of the Caloctoran Capital"
+      id="redirect"
+    >
+    <script src="js/redirect.js"></script>
   </body>
 </html>
